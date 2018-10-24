@@ -14,6 +14,7 @@ import { RouterModule } from '@angular/router';
 import { ClientComponent } from './client/client.component';
 import { AddshopComponent } from './addshop/addshop.component';
 import { ShopComponent } from './shop/shop.component';
+import { CustomerDetailsComponent } from './customer-details/customer-details.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { ShopComponent } from './shop/shop.component';
     ShopsComponent,
     ClientComponent,
     AddshopComponent,
-    ShopComponent
+    ShopComponent,
+    CustomerDetailsComponent
   ],
   imports: [
     NavbarModule,
@@ -56,6 +58,10 @@ import { ShopComponent } from './shop/shop.component';
       {
         path: 'shop',
         component: ShopComponent
+      },
+      {
+        path: 'customer-details',
+        component: CustomerDetailsComponent
       }
 
     ])

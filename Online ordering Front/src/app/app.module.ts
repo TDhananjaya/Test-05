@@ -40,6 +40,10 @@ import { ClientComponent } from './client/client.component';
       {
         path: 'shops',
         component: ShopsComponent
+      },
+      {
+        path: 'client',
+        component: ClientComponent
       }
     ])
   ],

@@ -4,3 +4,27 @@
      position: fixed;
      z-index: 2;
  }
+ .body{
+     background-color: aqua;
+     height: 100%;
+     background-image: url('../../assets/images/4.jpg');
+     background-size: cover;
+     overflow: hidden;
+ }
+
+ .cardpanals{
+     padding-top: 130px;
+     padding-left: 100px;
+     padding-right: 100px;
+     padding-bottom: 90px;
+ }
+ .cardpanals2{
+   
+    padding-left: 100px;
+     padding-right: 100px;
+     padding-bottom: 90px;
+}
+
+.botton{
+    padding-left: 50px;
+}

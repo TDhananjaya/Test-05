@@ -12,6 +12,7 @@ import { AccountsComponent } from './accounts/accounts.component';
 import { ShopsComponent } from './shops/shops.component';
 import { RouterModule } from '@angular/router';
 import { ClientComponent } from './client/client.component';
+import { AddshopComponent } from './addshop/addshop.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { ClientComponent } from './client/client.component';
     HomeComponent,
     AccountsComponent,
     ShopsComponent,
-    ClientComponent
+    ClientComponent,
+    AddshopComponent
   ],
   imports: [
     NavbarModule,
@@ -44,7 +46,12 @@ import { ClientComponent } from './client/client.component';
       {
         path: 'client',
         component: ClientComponent
+      },
+      {
+        path: 'addshop',
+        component: AddshopComponent
       }
+
     ])
   ],
   schemas: [ NO_ERRORS_SCHEMA ],

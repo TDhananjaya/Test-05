@@ -32,16 +32,15 @@
 <!-- login -->
 
 <div class="container-fluid body">
-    <div class="row login-signup">
-      <div class="col-lg-4"></div>
-      <div class="col-lg-4">
-  
-        <div mdbModal #frame="mdbModal" [formGroup]="loginForm" id="frameModalTop" role="dialog" aria-labelledby="myModalLabel" aria-hidden="">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header text-center">
-                <h4 class="modal-title w-100 font-weight-bold">Sign in</h4>
-  
+  <div class="row login-signup">
+    <div class="col-lg-4"></div>
+    <div class="col-lg-4">
+
+      <div mdbModal #frame="mdbModal" [formGroup]="loginForm" id="frameModalTop" role="dialog" aria-labelledby="myModalLabel" aria-hidden="">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header text-center">
+              <h4 class="modal-title w-100 font-weight-bold">Sign in</h4>
               </div>
               <div class="modal-body mx-3">
                 <div class="md-form mb-5">
@@ -70,9 +69,6 @@
             </div>
           </div>
         </div>
-  
-  
-  
   
         <!-- login -->
   
@@ -119,6 +115,13 @@
                   <input type="password" id="orangeForm-pass" formControlName="password" name="password" class="form-control validate"
                     mdbInputDirective>
                   <label data-error="wrong" data-success="right" for="orangeForm-pass">Your password</label>
+                </div>
+
+                <div class="md-form mb-4">
+                  <i class="fa fa-lock prefix grey-text"></i>
+                  <input type="password" id="orangeForm-pass" formControlName="password" name="password" class="form-control validate"
+                    mdbInputDirective>
+                  <label data-error="wrong" data-success="right" for="orangeForm-pass">Confirm Your password</label>
                 </div>
   
               </div>

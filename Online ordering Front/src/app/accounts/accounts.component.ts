@@ -3,6 +3,7 @@ import { FormGroup, FormControl, FormBuilder } from '@angular/forms';
 import { AppService } from '../app.service';
 import { Validators } from '@angular/forms';
 import { validateConfig } from '@angular/router/src/config';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-accounts',
@@ -11,7 +12,7 @@ import { validateConfig } from '@angular/router/src/config';
 })
 export class AccountsComponent implements OnInit {
 
-  constructor(private service:AppService,private fb:FormBuilder) { }
+  constructor(private service:AppService,private fb:FormBuilder,router:Router) { }
 
   ngOnInit() {
   }
@@ -51,6 +52,7 @@ export class AccountsComponent implements OnInit {
       this.service.login(formData).subscribe(data=>{
         console.log(data);
         localStorage.setItem("token",data.token);
+        this.service.authenticateUser();
       },err=>{
         console.log(err);
       });

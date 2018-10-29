@@ -1,4 +1,37 @@
+
 <app-navbar></app-navbar>
+
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12 navbartop">
+          <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark blue lighten-2" [containerInside]="false">
+              <mdb-navbar-brand>
+                  <a class="navbar-brand" href="#"><b>Online Food and Beverages Ordering System</b></a>
+              </mdb-navbar-brand>
+              <links>
+                  <ul class="navbar-nav mr-auto">
+                      <li class="nav-item active">
+                          <a class="nav-link waves-light" href="#" mdbWavesEffect> <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link waves-light" href="#" mdbWavesEffect></a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link waves-light" href="#" mdbWavesEffect></a>
+                      </li>
+                  </ul>
+                 
+              </links>
+          </mdb-navbar>
+        <!--/.Navbar-->
+        
+      </div>
+      <div class="body">
+  
+      </div>
+    </div>
+  </div>
+
 
 <!-- login -->
 
@@ -7,12 +40,15 @@
     <div class="col-lg-4"></div>
     <div class="col-lg-4">
 
+
       <div mdbModal #frame="mdbModal" [formGroup]="loginForm" id="frameModalTop" role="dialog" aria-labelledby="myModalLabel"
         aria-hidden="">
+
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header text-center">
               <h4 class="modal-title w-100 font-weight-bold">Sign in</h4>
+
 
             </div>
             <div class="modal-body mx-3">
@@ -21,6 +57,7 @@
                 <input type="email" id="defaultForm-email" formControlName="email" class="form-control validate"
                   mdbInputDirective email>
                 <label data-error="wrong" data-success="right" for="defaultForm-email">Your email</label>
+
               </div>
 
               <div class="md-form mb-4">
@@ -41,6 +78,7 @@
             </div>
           </div>
         </div>
+
       </div>
 
 
@@ -78,6 +116,7 @@
                 <input type="text" id="orangeForm-lname" formControlName="lastName" class="form-control validate"
                   mdbInputDirective>
                 <label data-error="wrong" data-success="right" for="orangeForm-lname">Last name</label>
+
               </div>
               <div class="md-form mb-5">
                 <i class="fa fa-envelope prefix grey-text"></i>

@@ -4,19 +4,11 @@
     position: fixed;
     z-index: 2;
 }
-.body{
-    background-color: aqua;
-    height: 100%;
-    background-image: url('../../assets/images/5.jpg');
-    background-size: cover;
-    overflow: hidden;
-}
-// .container{
-//     background-image: url('../../assets/images/4.jpg');
-// }
 
 .carousel{
     padding: 0px !important;
+    margin-top: 0%;
+    
 }
 .container{
     padding-top: 100px;

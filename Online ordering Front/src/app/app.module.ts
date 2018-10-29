@@ -13,6 +13,10 @@ import { ShopsComponent } from './shops/shops.component';
 import { RouterModule } from '@angular/router';
 import { ClientComponent } from './client/client.component';
 import { AddshopComponent } from './addshop/addshop.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AppService } from './app.service';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -22,40 +26,21 @@ import { AddshopComponent } from './addshop/addshop.component';
     AccountsComponent,
     ShopsComponent,
     ClientComponent,
-    AddshopComponent
+    AddshopComponent,
+    NavbarComponent
   ],
   imports: [
+    HttpClientModule,
+    ReactiveFormsModule,
     NavbarModule,
     WavesModule,
     BrowserModule,
     AppRoutingModule,
     MDBBootstrapModule.forRoot(),
-    RouterModule.forRoot([
-      {
-        path:'accounts',
-        component:AccountsComponent
-      },
-      {
-        path: '',
-        component: HomeComponent
-      },
-      {
-        path: 'shops',
-        component: ShopsComponent
-      },
-      {
-        path: 'client',
-        component: ClientComponent
-      },
-      {
-        path: 'addshop',
-        component: AddshopComponent
-      }
-
-    ])
+  
   ],
   schemas: [ NO_ERRORS_SCHEMA ],
-  providers: [],
+  providers: [AppService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

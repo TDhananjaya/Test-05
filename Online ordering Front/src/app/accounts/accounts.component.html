@@ -23,9 +23,7 @@
         <!--/.Navbar-->
         
       </div>
-      <div class="body">
-  
-      </div>
+      
     </div>
   </div>
 
@@ -59,7 +57,7 @@
   
               </div>
               <div class="modal-footer d-flex justify-content-center">
-                <button mdbBtn color="default" class="waves-light" (click)="login()" mdbWavesEffect>Login</button>
+                <button mdbBtn color="primary" class="waves-light" (click)="login()" mdbWavesEffect>Login</button>
               </div>
   
               
@@ -77,7 +75,7 @@
         <!-- signup -->
   
   
-        <button type="button" mdbBtn color="default" rounded="true" data-toggle="modal" data-target="#basicExample"
+        <button type="button" mdbBtn color="info" rounded="true" data-toggle="modal" data-target="#basicExample"
           (click)="frame2.show()" mdbWavesEffect>Sign Up</button>
   
         <div  [formGroup]="myForm" mdbModal #frame2="mdbModal" class="modal fade left" id="frameModalTop" tabindex="-1" role="dialog"
@@ -127,7 +125,7 @@
               </div>
               <div class="signupbtn">
                 <div class="modal-footer d-flex justify-content-center">
-                  <button mdbBtn color="deep-orange" (click)="register()" class="waves-light" mdbWavesEffect>Sign up</button>
+                  <button mdbBtn color="primary" (click)="register()" class="waves-light" mdbWavesEffect>Sign up</button>
                 </div>
               </div>
   

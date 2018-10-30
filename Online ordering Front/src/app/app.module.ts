@@ -13,15 +13,12 @@ import { ShopsComponent } from './shops/shops.component';
 import { RouterModule } from '@angular/router';
 import { ClientComponent } from './client/client.component';
 import { AddshopComponent } from './addshop/addshop.component';
-<<<<<<< HEAD
 import { NavbarComponent } from './navbar/navbar.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppService } from './app.service';
 import { HttpClientModule } from '@angular/common/http';
-=======
 import { ShopComponent } from './shop/shop.component';
 import { CustomerDetailsComponent } from './customer-details/customer-details.component';
->>>>>>> 84945c62fbaf42b2914ab41bbc3781e0fdb8ba3b
 
 
 @NgModule({
@@ -32,12 +29,9 @@ import { CustomerDetailsComponent } from './customer-details/customer-details.co
     ShopsComponent,
     ClientComponent,
     AddshopComponent,
-<<<<<<< HEAD
-    NavbarComponent
-=======
+    NavbarComponent,
     ShopComponent,
     CustomerDetailsComponent
->>>>>>> 84945c62fbaf42b2914ab41bbc3781e0fdb8ba3b
   ],
   imports: [
     HttpClientModule,
@@ -47,41 +41,7 @@ import { CustomerDetailsComponent } from './customer-details/customer-details.co
     BrowserModule,
     AppRoutingModule,
     MDBBootstrapModule.forRoot(),
-<<<<<<< HEAD
   
-=======
-    RouterModule.forRoot([
-      {
-        path:'accounts',
-        component:AccountsComponent
-      },
-      {
-        path: '',
-        component: HomeComponent
-      },
-      {
-        path: 'shops',
-        component: ShopsComponent
-      },
-      {
-        path: 'client',
-        component: ClientComponent
-      },
-      {
-        path: 'addshop',
-        component: AddshopComponent
-      },
-      {
-        path: 'shop',
-        component: ShopComponent
-      },
-      {
-        path: 'customer-details',
-        component: CustomerDetailsComponent
-      }
-
-    ])
->>>>>>> 84945c62fbaf42b2914ab41bbc3781e0fdb8ba3b
   ],
   schemas: [ NO_ERRORS_SCHEMA ],
   providers: [AppService],

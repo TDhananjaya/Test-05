@@ -10,13 +10,13 @@ export class AppService {
 
   constructor(private _http: HttpClient,private router:Router) { }
 
-
-
   login(data){
     
     return this._http.post<any>('api/users/login',data);
     
   }
+
+  
 
   loggedIn(){
     return !!localStorage.getItem("token");
@@ -67,10 +67,10 @@ export class AppService {
     }
   }
 
-  addShop(data){
+  // addShop(data){
 
-    return this._http.post<any>('/api/users/addshop',data);
-  }
+  //   return this._http.post<any>('/api/users/addshop',data);
+  // }
   
 }
 

@@ -1,34 +1,15 @@
 
-<app-navbar></app-navbar>
-
 <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-12 navbartop">
-          <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark blue lighten-2" [containerInside]="false">
-              <mdb-navbar-brand>
-                  <a class="navbar-brand" href="#"><b>Online Food and Beverages Ordering System</b></a>
-              </mdb-navbar-brand>
-              <links>
-                  <ul class="navbar-nav mr-auto">
-                      <li class="nav-item active">
-                          <a class="nav-link waves-light" href="#" mdbWavesEffect> <span class="sr-only">(current)</span></a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link waves-light" href="#" mdbWavesEffect></a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link waves-light" href="#" mdbWavesEffect></a>
-                      </li>
-                  </ul>
-                 
-              </links>
-          </mdb-navbar>
-        <!--/.Navbar-->
-        
-      </div>
+  <div class="row">
+    <div class="col-lg-12 navbartop">
       
+      <!--/.Navbar-->
+      <app-navbar></app-navbar>
+
     </div>
+
   </div>
+</div>
 
 
 <!-- login -->
@@ -68,6 +49,9 @@
             </div>
             <div class="modal-footer d-flex justify-content-center">
               <button mdbBtn color="default" class="waves-light" (click)="login()" mdbWavesEffect>Login</button>
+
+              <button type="button" mdbBtn color="default" rounded="true" data-toggle="modal" data-target="#basicExample"
+        (click)="frame2.show()" mdbWavesEffect>Sign Up</button>
             </div>
 
 
@@ -89,8 +73,7 @@
       <!-- signup -->
 
 
-      <button type="button" mdbBtn color="default" rounded="true" data-toggle="modal" data-target="#basicExample"
-        (click)="frame2.show()" mdbWavesEffect>Sign Up</button>
+      
 
       <div [formGroup]="registerForm" mdbModal #frame2="mdbModal" class="modal fade left" id="frameModalTop" tabindex="-1"
         role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">

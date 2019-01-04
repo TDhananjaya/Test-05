@@ -67,10 +67,10 @@ export class AppService {
     }
   }
 
-  // addShop(data){
+  addShop(data){
 
-  //   return this._http.post<any>('/api/users/addshop',data);
-  // }
+    return this._http.post<any>('/api/users/addshop',data);
+  }
   
 }
 

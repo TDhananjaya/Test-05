@@ -19,6 +19,7 @@ import { AppService } from './app.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ShopComponent } from './shop/shop.component';
 import { CustomerDetailsComponent } from './customer-details/customer-details.component';
+import { MangeShopComponent } from './mange-shop/mange-shop.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { CustomerDetailsComponent } from './customer-details/customer-details.co
     AddshopComponent,
     NavbarComponent,
     ShopComponent,
-    CustomerDetailsComponent
+    CustomerDetailsComponent,
+    MangeShopComponent
   ],
   imports: [
     HttpClientModule,

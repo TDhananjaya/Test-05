@@ -71,6 +71,15 @@ export class AppService {
 
     return this._http.post<any>('/api/users/addshop',data);
   }
+
+
+  getShops(data){
+    return this._http.post<any>('/api/users/shops',data);
+  }
+
+  getShop(id){
+    return this._http.get<any>('api/users/shop/'+id);
+  }
   
 }
 

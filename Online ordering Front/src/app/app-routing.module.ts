@@ -5,6 +5,7 @@ import { AccountsComponent } from './accounts/accounts.component';
 import { AddshopComponent } from './addshop/addshop.component';
 import { ShopsComponent } from './shops/shops.component';
 import { ClientComponent } from './client/client.component';
+import { MangeShopComponent } from './mange-shop/mange-shop.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -13,6 +14,7 @@ const routes: Routes = [
   {path:'addshop',component:AddshopComponent},
   {path:'shops',component:ShopsComponent},
   {path:'client',component:ClientComponent},
+  {path:"manageshop/:id",component:MangeShopComponent}
 
 ];
 

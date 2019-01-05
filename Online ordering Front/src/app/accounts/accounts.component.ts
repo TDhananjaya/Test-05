@@ -46,6 +46,8 @@ export class AccountsComponent implements OnInit {
     password:['',Validators.required,]
   });
 
+
+  
   login(){
     var formData= this.loginForm.value
     if(this.loginForm.valid){

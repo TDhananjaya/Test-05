@@ -1,5 +1,4 @@
 <div class="container-fluid">
-<<<<<<< HEAD
   <div class="row">
     <div class="col-lg-12 navbartop">
       <!--Navbar-->
@@ -33,39 +32,6 @@
       </mdb-navbar>
       <!--/.Navbar-->
 
-=======
-    <div class="row">
-      <div class="col-lg-12 navbartop">
-        <!--Navbar-->
-        <mdb-navbar SideClass="navbar navbar-1 navbar-dark blue lighten-2" [containerInside]="false">
-  
-          <!-- Navbar brand -->
-          <mdb-navbar-brand><a class="navbar-brand" href="#"><b>Online Food and Beverages Ordering System</b></a></mdb-navbar-brand>
-  
-          <!-- Collapsible content -->
-          <links>
-  
-            <!-- Links -->
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a routerLink=''><a class="nav-link waves-light" mdbWavesEffect>Home<span class="sr-only">(current)</span></a></a>
-              </li>
-              <li class="nav-item">
-                <a routerLink='/shops'><a class="nav-link waves-light" mdbWavesEffect>Shops</a></a>
-              </li>
-              <li class="nav-item">
-                <a routerLink='/shops'><a class="nav-link waves-light" mdbWavesEffect>Log Out</a></a>
-              </li>
-            </ul>
-            <!-- Links -->
-          </links>
-          <!-- Collapsible content -->
-  
-        </mdb-navbar>
-        <!--/.Navbar-->
-  
-      </div>
->>>>>>> 4489c6e41b1931eba509dffa8633cac6d56ef5ad
     </div>
   </div>
 </div>
@@ -87,87 +53,19 @@
       <h3>Manage Your Shops</h3>
     </div>
   </div>
-
+<div *ngFor="let shop of shops">
   <div class="row">
-    <div class="col-lg-8">Shop 1</div>
-    <div class="col-lg-4"><button mdbBtn type="button" color="primary" class="waves-light" mdbWavesEffect>Manage</button></div>
-  </div>
-  <div class="row">
-    <div class="col-lg-8">Shop 1</div>
-    <div class="col-lg-4"><button mdbBtn type="button" color="primary" class="waves-light" mdbWavesEffect>Manage</button></div>
-  </div>
-  <div class="row">
-    <div class="col-lg-12 navbartop">
-      <!--Navbar-->
-      <mdb-navbar SideClass="navbar navbar-1 navbar-dark blue lighten-2" [containerInside]="false">
-
-        <!-- Navbar brand -->
-        <mdb-navbar-brand><a class="navbar-brand" href="#">Online Food Ordering System</a></mdb-navbar-brand>
-
-        <!-- Collapsible content -->
-        <links>
-
-          <!-- Links -->
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a routerLink=''><a class="nav-link waves-light" mdbWavesEffect>Home<span class="sr-only">(current)</span></a></a>
-            </li>
-            <li class="nav-item">
-              <a routerLink='/accounts'> <a class="nav-link waves-light" mdbWavesEffect>Accounts</a></a>
-            </li>
-            <li class="nav-item">
-              <a routerLink='/shops'><a class="nav-link waves-light" mdbWavesEffect>Shops</a></a>
-            </li>
-            <li class="nav-item">
-              <a routerLink='/shops'><a class="nav-link waves-light" mdbWavesEffect>Log Out</a></a>
-            </li>
-          </ul>
-          <!-- Links -->
-        </links>
-        <!-- Collapsible content -->
-
-      </mdb-navbar>
-      <!--/.Navbar-->
-
-    </div>
-    <div class="body">
-
-    </div>
+    <div class="col-lg-8">{{shop.shopName}}</div>
+    <div class="col-lg-4"><button mdbBtn type="button" color="primary" class="waves-light" mdbWavesEffect (click)=goToManageShops(shop._id)>Manage</button></div>
   </div>
 </div>
-
-<div class="container clientpanal">
-  <div class="row">
-    <div class="column">
-      <a routerLink='/addshop'><button mdbBtn type="button" color="primary" class="waves-light" mdbWavesEffect>Add New
-          Shops</button></a>
-      <!-- connect button with add shop -->
-    </div>
-  </div>
+  
+  
 
 </div>
 
-<div class="container table1">
-  <div class="row table">
-    <div class="col-lg-12">
-      <h3>Manage Your Shops</h3>
-    </div>
-  </div>
 
-  <div class="row">
-    <div class="col-lg-8">Shop 1</div>
-    <div class="col-lg-4"><button mdbBtn type="button" color="primary" class="waves-light" mdbWavesEffect>Manage</button></div>
-  </div>
-  <div class="row">
-    <div class="col-lg-8">Shop 1</div>
-    <div class="col-lg-4"><button mdbBtn type="button" color="primary" class="waves-light" mdbWavesEffect>Manage</button></div>
-  </div>
-  <div class="row">
-    <div class="col-lg-8">Shop 1</div>
-    <div class="col-lg-4"><button mdbBtn type="button" color="primary" class="waves-light" mdbWavesEffect>Manage</button></div>
-  </div>
 
-</div>
 
 
 

@@ -1,3 +1,4 @@
+<div class="container-fluid">
 <div class="row">
   <div class="col-lg-12 navbartop">
     <!--Navbar-->
@@ -41,55 +42,128 @@
 <div class="container ShopDetails" [formGroup]="addShop">
   <div class="row">
     <div class="col-lg-12">
-      <h3><b>Registered Shops</b></h3>
+      <h3><b>{{shopDetails?.shopName}} Shop</b></h3>
     </div>
   </div>
 
-  <div class="row">
+  <!-- <div class="row">
     <div class="col-lg-12">
-      <div class="col-lg-4">       
-          <label for="form6">Shop Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{shopDetails?.shopName}}</label>  
+      <div class="col-lg-4">
+        <label for="form6">Shop Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{shopDetails?.shopName}}</label>
       </div>
       <div class="col-lg-8"></div>
     </div>
   </div>
 
   <div class="row">
-      <div class="col-lg-12">
-        <div class="col-lg-4">       
-            <label for="form6">Shop Address &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{shopDetails?.address}}</label>  
-        </div>
-        <div class="col-lg-8"></div>
+    <div class="col-lg-12">
+      <div class="col-lg-4">
+        <label for="form6">Shop Address &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{shopDetails?.address}}</label>
       </div>
+      <div class="col-lg-8"></div>
     </div>
+  </div>
 
-    <div class="row">
-        <div class="col-lg-12">
-          <div class="col-lg-4">       
-              <label for="form6">Description &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{shopDetails?.description}}</label>  
-          </div>
-          <div class="col-lg-8"></div>
-        </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="col-lg-4">
+        <label for="form6">Description &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{shopDetails?.description}}</label>
       </div>
+      <div class="col-lg-8"></div>
+    </div>
+  </div>
 
-      <div class="row">
-          <div class="col-lg-12">
-            <div class="col-lg-4">       
-                <label for="form6">Contact Number &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{shopDetails?.telePhoneNumber}}</label>  
-            </div>
-            <div class="col-lg-8"></div>
-          </div>
-        </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="col-lg-4">
+        <label for="form6">Contact Number
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{shopDetails?.telePhoneNumber}}</label>
+      </div>
+      <div class="col-lg-8"></div>
+    </div>
+  </div>
 
-        <div class="row">
-            <div class="col-lg-12">
-              <div class="col-lg-4">       
-                  <label for="form6">Email &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{shopDetails?.email}}</label>  
-              </div>
-              <div class="col-lg-8"></div>
-            </div>
-          </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="col-lg-4">
+        <label for="form6">Email &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{shopDetails?.email}}</label>
+      </div>
+      <div class="col-lg-8"></div>
+    </div>
+  </div> -->
 </div>
+
+
+
+
+
+
+
+<style>
+  table {
+      width:30%;
+      margin-left: 200px;
+    }
+    table, th, td {
+     
+      border-collapse: collapse;
+    }
+    
+    th, td {
+      padding: 15px;
+      text-align: left;
+    }
+    table tr:nth-child(odd) {
+      background-color: #eee;
+    }
+    
+    
+    </style>
+
+<body>
+
+  <table>
+
+    <tr>
+      <td>Shop Name</td>
+      <td>{{shopDetails?.shopName}}</td>
+
+    </tr>
+    <tr>
+      <td>Shop Address</td>
+      <td>{{shopDetails?.address}}</td>
+
+    </tr>
+    <tr>
+      <td>Description</td>
+      <td>{{shopDetails?.description}}</td>
+    </tr>
+
+    <tr>
+      <td>Contact Number</td>
+      <td>{{shopDetails?.telePhoneNumber}}</td>
+    </tr>
+
+    <tr>
+      <td>Email</td>
+      <td>{{shopDetails?.email}}</td>
+    </tr>
+
+  </table>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -103,56 +177,55 @@
 
 
 <div class="container ShopDetails" [formGroup]="addShop">
+  <div class="row">
+    <div class="col-lg-12">
+      <h3><b>Add Your Foods</b></h3>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-8">
+      <div class="md-form">
+        <input value="" type="text" id="form6" class="form-control" formControlName="shopName" mdbInputDirective>
+        <label for="form6">Food Name</label>
+      </div>
+    </div>
+    <div class="col-g-4"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-8">
+      <div class="md-form">
+        <input value="" type="text" id="form6" class="form-control" formControlName="address" mdbInputDirective>
+        <label for="form6">Price</label>
+      </div>
+    </div>
+    <div class="col-g-4"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-8">
+      <div class="md-form">
+        <input value="" type="text" id="form6" class="form-control" formControlName="description" mdbInputDirective>
+        <label for="form6">Description</label>
+      </div>
+    </div>
+    <div class="col-g-4"></div>
+  </div>
+
+  <div class="container">
     <div class="row">
-      <div class="col-lg-12">
-        <h3><b>Add Your Foods</b></h3>
-      </div>
+      <div class="col-lg-7"></div>
+      <div class="col-lg-5"> <button mdbBtn type="button" color="primary" class="waves-light " mdbWavesEffect (click)="add()">Add</button></div>
+
     </div>
-  
-    <div class="row">
-      <div class="col-lg-8">
-        <div class="md-form">
-          <input value="" type="text" id="form6" class="form-control" formControlName="shopName" mdbInputDirective>
-          <label for="form6">Food Name</label>
-        </div>
-      </div>
-      <div class="col-g-4"></div>
-    </div>
-  
-    <div class="row">
-      <div class="col-lg-8">
-        <div class="md-form">
-          <input value="" type="text" id="form6" class="form-control" formControlName="address" mdbInputDirective>
-          <label for="form6">Price</label>
-        </div>
-      </div>
-      <div class="col-g-4"></div>
-    </div>
-  
-    <div class="row">
-      <div class="col-lg-8">
-        <div class="md-form">
-          <input value="" type="text" id="form6" class="form-control" formControlName="description" mdbInputDirective>
-          <label for="form6">Description</label>
-        </div>
-      </div>
-      <div class="col-g-4"></div>
-    </div>
-  
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-7"></div>
-        <div class="col-lg-5"> <button mdbBtn type="button" color="primary" class="waves-light " mdbWavesEffect (click)="add()">Add</button></div>
-  
-      </div>
-    </div>
-  
-  
-  
   </div>
 
 
+</div>
 
+
+</div>
 
 
 

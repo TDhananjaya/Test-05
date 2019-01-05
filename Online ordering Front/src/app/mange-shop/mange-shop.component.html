@@ -1,52 +1,52 @@
 <div class="container-fluid">
-<div class="row">
-  <div class="col-lg-12 navbartop">
-    <!--Navbar-->
-    <mdb-navbar SideClass="navbar navbar-1 navbar-dark blue lighten-2" [containerInside]="false">
-
-      <!-- Navbar brand -->
-      <mdb-navbar-brand><a class="navbar-brand" href="#"><b>Online Food and Beverages Ordering System</b></a></mdb-navbar-brand>
-
-      <!-- Collapsible content -->
-      <links>
-
-        <!-- Links -->
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a routerLink=''><a class="nav-link waves-light" mdbWavesEffect>Home<span class="sr-only">(current)</span></a></a>
-          </li>
-          <li class="nav-item">
-            <a routerLink='/accounts'> <a class="nav-link waves-light" mdbWavesEffect>Accounts</a></a>
-          </li>
-          <li class="nav-item">
-            <a routerLink='/shops'><a class="nav-link waves-light" mdbWavesEffect>Shops</a></a>
-          </li>
-          <li class="nav-item">
-            <a routerLink='/shops'><a class="nav-link waves-light" mdbWavesEffect>Log Out</a></a>
-          </li>
-        </ul>
-        <!-- Links -->
-      </links>
-      <!-- Collapsible content -->
-
-    </mdb-navbar>
-    <!--/.Navbar-->
-
-  </div>
-  <div class="body">
-
-  </div>
-</div>
-
-
-<div class="container ShopDetails" [formGroup]="addShop">
   <div class="row">
-    <div class="col-lg-12">
-      <h3><b>{{shopDetails?.shopName}} Shop</b></h3>
+    <div class="col-lg-12 navbartop">
+      <!--Navbar-->
+      <mdb-navbar SideClass="navbar navbar-1 navbar-dark blue lighten-2" [containerInside]="false">
+
+        <!-- Navbar brand -->
+        <mdb-navbar-brand><a class="navbar-brand" href="#"><b>Online Food and Beverages Ordering System</b></a></mdb-navbar-brand>
+
+        <!-- Collapsible content -->
+        <links>
+
+          <!-- Links -->
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a routerLink=''><a class="nav-link waves-light" mdbWavesEffect>Home<span class="sr-only">(current)</span></a></a>
+            </li>
+            <li class="nav-item">
+              <a routerLink='/accounts'> <a class="nav-link waves-light" mdbWavesEffect>Accounts</a></a>
+            </li>
+            <li class="nav-item">
+              <a routerLink='/shops'><a class="nav-link waves-light" mdbWavesEffect>Shops</a></a>
+            </li>
+            <li class="nav-item">
+              <a routerLink='/shops'><a class="nav-link waves-light" mdbWavesEffect>Log Out</a></a>
+            </li>
+          </ul>
+          <!-- Links -->
+        </links>
+        <!-- Collapsible content -->
+
+      </mdb-navbar>
+      <!--/.Navbar-->
+
+    </div>
+    <div class="body">
+
     </div>
   </div>
 
-  <!-- <div class="row">
+
+  <div class="container ShopDetails" [formGroup]="addShop">
+    <div class="row">
+      <div class="col-lg-12">
+        <h3><b>{{shopDetails?.shopName}} Shop</b></h3>
+      </div>
+    </div>
+
+    <!-- <div class="row">
     <div class="col-lg-12">
       <div class="col-lg-4">
         <label for="form6">Shop Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{shopDetails?.shopName}}</label>
@@ -91,7 +91,7 @@
       <div class="col-lg-8"></div>
     </div>
   </div> -->
-</div>
+  </div>
 
 
 
@@ -99,13 +99,12 @@
 
 
 
-<style>
-  table {
+  <style>
+    table {
       width:30%;
       margin-left: 200px;
     }
-    table, th, td {
-     
+    table, th, td {    
       border-collapse: collapse;
     }
     
@@ -115,45 +114,41 @@
     }
     table tr:nth-child(odd) {
       background-color: #eee;
-    }
-    
-    
+    }  
     </style>
 
-<body>
+  <body>
 
-  <table>
+    <table>
 
-    <tr>
-      <td>Shop Name</td>
-      <td>{{shopDetails?.shopName}}</td>
+      <tr>
+        <td>Shop Name</td>
+        <td>{{shopDetails?.shopName}}</td>
 
-    </tr>
-    <tr>
-      <td>Shop Address</td>
-      <td>{{shopDetails?.address}}</td>
+      </tr>
+      <tr>
+        <td>Shop Address</td>
+        <td>{{shopDetails?.address}}</td>
 
-    </tr>
-    <tr>
-      <td>Description</td>
-      <td>{{shopDetails?.description}}</td>
-    </tr>
+      </tr>
+      <tr>
+        <td>Description</td>
+        <td>{{shopDetails?.description}}</td>
+      </tr>
 
-    <tr>
-      <td>Contact Number</td>
-      <td>{{shopDetails?.telePhoneNumber}}</td>
-    </tr>
+      <tr>
+        <td>Contact Number</td>
+        <td>{{shopDetails?.telePhoneNumber}}</td>
+      </tr>
 
-    <tr>
-      <td>Email</td>
-      <td>{{shopDetails?.email}}</td>
-    </tr>
+      <tr>
+        <td>Email</td>
+        <td>{{shopDetails?.email}}</td>
+      </tr>
 
-  </table>
+    </table>
 
-</body>
-
-
+  </body>
 
 
 
@@ -176,53 +171,55 @@
 
 
 
-<div class="container ShopDetails" [formGroup]="addShop">
-  <div class="row">
-    <div class="col-lg-12">
-      <h3><b>Add Your Foods</b></h3>
-    </div>
-  </div>
 
-  <div class="row">
-    <div class="col-lg-8">
-      <div class="md-form">
-        <input value="" type="text" id="form6" class="form-control" formControlName="shopName" mdbInputDirective>
-        <label for="form6">Food Name</label>
-      </div>
-    </div>
-    <div class="col-g-4"></div>
-  </div>
 
-  <div class="row">
-    <div class="col-lg-8">
-      <div class="md-form">
-        <input value="" type="text" id="form6" class="form-control" formControlName="address" mdbInputDirective>
-        <label for="form6">Price</label>
-      </div>
-    </div>
-    <div class="col-g-4"></div>
-  </div>
-
-  <div class="row">
-    <div class="col-lg-8">
-      <div class="md-form">
-        <input value="" type="text" id="form6" class="form-control" formControlName="description" mdbInputDirective>
-        <label for="form6">Description</label>
-      </div>
-    </div>
-    <div class="col-g-4"></div>
-  </div>
-
-  <div class="container">
+  <div class="container ShopDetails" [formGroup]="addShop">
     <div class="row">
-      <div class="col-lg-7"></div>
-      <div class="col-lg-5"> <button mdbBtn type="button" color="primary" class="waves-light " mdbWavesEffect (click)="add()">Add</button></div>
-
+      <div class="col-lg-12">
+        <h3><b>Add Your Foods</b></h3>
+      </div>
     </div>
+
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="md-form">
+          <input value="" type="text" id="form6" class="form-control" formControlName="shopName" mdbInputDirective>
+          <label for="form6">Food Name</label>
+        </div>
+      </div>
+      <div class="col-g-4"></div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="md-form">
+          <input value="" type="text" id="form6" class="form-control" formControlName="address" mdbInputDirective>
+          <label for="form6">Price</label>
+        </div>
+      </div>
+      <div class="col-g-4"></div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="md-form">
+          <input value="" type="text" id="form6" class="form-control" formControlName="description" mdbInputDirective>
+          <label for="form6">Description</label>
+        </div>
+      </div>
+      <div class="col-g-4"></div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7"></div>
+        <div class="col-lg-5"> <button mdbBtn type="button" color="primary" class="waves-light " mdbWavesEffect (click)="add()">Add</button></div>
+
+      </div>
+    </div>
+
+
   </div>
-
-
-</div>
 
 
 </div>

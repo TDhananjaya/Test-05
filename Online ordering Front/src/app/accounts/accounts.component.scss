@@ -1,5 +1,6 @@
 .header{
     color: red;
+
 }
 
 .formcontainer{
@@ -36,10 +37,11 @@ div > span {
       font-family: 'Lobster', cursive;   
   }
   .body{
-    //   background-color: aqua;
+      background-color: aqua;
     background-image: url('../../assets/images/4.jpg');
     background-size: cover !important;
     overflow: hidden !important;
+    padding-top: 90px;
  
      
   }
